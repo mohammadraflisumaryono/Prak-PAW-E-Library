@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Digital Library</title>
+    <link rel="icon" href="Assets/Logo Icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section id="hero">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent position-fixed w-100">
+            <div class="container">
+                <a class="navbar-brand" href="#hero">
+                    <img src="Assets/Logo Icon.png" alt="" width="34" class="d-inline-block align-text-top me-3">
+                    Digital Library
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <button class="button-primary">Sign Up</button>
+                        <button class="button-secondary">Log In</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Tagline -->
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-6 col-sm-12 hero-tagline my-auto">
+                    <h1>Discover a World of Knowledge.</h1>
+                    <p>
+                        <span class="fw-bold">Our Digital Library</span> provides access to thousands of books,
+                        journals,
+                        and
+                        academic resources from trusted sources.
+                    </p>
+                    <button class="button-lg-secondary me-4">Explore Now</button>
+                    <a href="#recommendations">
+                        <img src="Assets/Right Arrow.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <img src="Assets/icon.png" class="image-hero position-absolute end-0 bottom-0" alt="">
+            <img src="Assets/Accsent 1.png" alt="" class="h-100 position-absolute top-0 start-0 accsent-img">
+        </div>
+    </section>
+
+    <!-- End navbar -->
+    <!-- Services Section -->
+    <section id="layanan">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Our Services</h2>
+                    <span class="sub-title">Empowering your learning journey with digital resources</span>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-4 text-center">
+                    <div class="card-layanan">
+                        <div class="circle-icon position-relative mx-auto">
+                            <img src="Assets/book.png"
+                                class="circle-test position-absolute top-50 start-50 translate-middle" alt="">
+                        </div>
+                        <h3 class="mt-4">E-Books</h3>
+                        <p class="mt-3">Access thousands of digital books across various genres and subjects</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card-layanan">
+                        <div class="circle-icon position-relative mx-auto">
+                            <img src="/Assets/paper.png"
+                                class="circle-test position-absolute top-50 start-50 translate-middle" alt="">
+                        </div>
+                        <h3 class="mt-4">Academic Journals</h3>
+                        <p class="mt-3">Browse through peer-reviewed journals and research papers</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card-layanan">
+                        <div class="circle-icon position-relative mx-auto">
+                            <img src="/Assets/multimedia.png"
+                                class="circle-test position-absolute top-50 start-50 translate-middle" alt="">
+                        </div>
+                        <h3 class="mt-4">Multimedia</h3>
+                        <p class="mt-3">Stream educational videos, audiobooks, and interactive content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="cari" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Find Your Next Read</h2>
+                    <p class="mx-auto">Search through our vast collection of digital resources</p>
+                </div>
+
+                <div class="col-md-12 col-lg-10 mx-auto">
+                    <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="books-tab" data-bs-toggle="tab" data-bs-target="#books"
+                                type="button" role="tab" aria-controls="books" aria-selected="true">Books</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="journals-tab" data-bs-toggle="tab" data-bs-target="#journals"
+                                type="button" role="tab" aria-controls="journals"
+                                aria-selected="false">Journals</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="multimedia-tab" data-bs-toggle="tab"
+                                data-bs-target="#multimedia" type="button" role="tab" aria-controls="multimedia"
+                                aria-selected="false">Multimedia</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="books" role="tabpanel" aria-labelledby="books-tab">
+                            <div class="input-group input-cari mb-3">
+                                <button class="button-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="/api/placeholder/24/24" alt="" class="d-block d-lg-inline mx-auto">
+                                    Category
+                                </button>
+                                <input type="text" class="form-control" placeholder="Search by title, author, or ISBN">
+                                <button class="button-primary" type="button">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Featured Collections -->
+    <section id="rekomendasi">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-12 text-center">
+                    <h2>Featured Collections</h2>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-evenly">
+                <!-- Science & Technology -->
+                <div class="col-lg-4 col-md-6 d-flex justify-content-evenly mb-4">
+                    <div class="card p-1 position-relative" style="width: 22rem;">
+                        <img src="/Assets/sainstech.jpg" class="card-img-top" alt="Science Collection">
+                        <div class="card-body">
+                            <h4>Science & Technology</h4>
+                            <p class="lh-sm mb-4">Latest publications in STEM fields <br> <span
+                                    class="text-primary">Featured</span></p>
+                            <div class="card-fasilitas d-flex justify-content-between align-items-center px-4">
+                                <span>
+                                    1000+
+                                    <p>Books</p>
+                                </span>
+                                <span>
+                                    500+
+                                    <p>Journals</p>
+                                </span>
+                                <span>
+                                    200+
+                                    <p>Videos</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Literature & Arts -->
+                <div class="col-lg-4 col-md-6 d-flex justify-content-evenly mb-4">
+                    <div class="card p-1 position-relative" style="width: 22rem;">
+                        <img src="/Assets/art.jpg" class="card-img-top" alt="Literature Collection">
+                        <div class="card-body">
+                            <h4>Literature & Arts</h4>
+                            <p class="lh-sm mb-4">Classical and contemporary works <br> <span
+                                    class="text-primary">Popular</span></p>
+                            <div class="card-fasilitas d-flex justify-content-between align-items-center px-4">
+                                <span>
+                                    2500+
+                                    <p>Books</p>
+                                </span>
+                                <span>
+                                    300+
+                                    <p>Audio Books</p>
+                                </span>
+                                <span>
+                                    150+
+                                    <p>Magazines</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business & Economics -->
+                <div class="col-lg-4 col-md-6 d-flex justify-content-evenly mb-4">
+                    <div class="card p-1 position-relative" style="width: 22rem;">
+                        <img src="/Assets/bisnis.jpg" class="card-img-top" alt="Business Collection">
+                        <div class="card-body">
+                            <h4>Business & Economics</h4>
+                            <p class="lh-sm mb-4">Professional resources & research <br> <span
+                                    class="text-primary">Trending</span></p>
+                            <div class="card-fasilitas d-flex justify-content-between align-items-center px-4">
+                                <span>
+                                    1500+
+                                    <p>Books</p>
+                                </span>
+                                <span>
+                                    400+
+                                    <p>Journals</p>
+                                </span>
+                                <span>
+                                    100+
+                                    <p>Case Studies</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- History & Social Sciences -->
+                <div class="col-lg-4 col-md-6 d-flex justify-content-evenly mb-4">
+                    <div class="card p-1 position-relative" style="width: 22rem;">
+                        <img src="/Assets/history.jpg" class="card-img-top" alt="History Collection">
+                        <div class="card-body">
+                            <h4>History & Social Sciences</h4>
+                            <p class="lh-sm mb-4">Historical documents & studies <br> <span
+                                    class="text-primary">Curated</span></p>
+                            <div class="card-fasilitas d-flex justify-content-between align-items-center px-4">
+                                <span>
+                                    2000+
+                                    <p>Books</p>
+                                </span>
+                                <span>
+                                    600+
+                                    <p>Archives</p>
+                                </span>
+                                <span>
+                                    300+
+                                    <p>Documents</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Computer Science & IT -->
+                <div class="col-lg-4 col-md-6 d-flex justify-content-evenly mb-4">
+                    <div class="card p-1 position-relative" style="width: 22rem;">
+                        <img src="/Assets/it.jpg" class="card-img-top" alt="IT Collection">
+                        <div class="card-body">
+                            <h4>Computer Science & IT</h4>
+                            <p class="lh-sm mb-4">Programming & technology resources <br> <span
+                                    class="text-primary">Updated
+                                    Daily</span></p>
+                            <div class="card-fasilitas d-flex justify-content-between align-items-center px-4">
+                                <span>
+                                    1800+
+                                    <p>Books</p>
+                                </span>
+                                <span>
+                                    500+
+                                    <p>Tutorials</p>
+                                </span>
+                                <span>
+                                    400+
+                                    <p>Videos</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Law & Politics -->
+                <div class="col-lg-4 col-md-6 d-flex justify-content-evenly mb-4">
+                    <div class="card p-1 position-relative" style="width: 22rem;">
+                        <img src="/Assets/law.jpg" class="card-img-top" alt="Law Collection">
+                        <div class="card-body">
+                            <h4>Law & Politics</h4>
+                            <p class="lh-sm mb-4">Legal documents & political studies <br> <span
+                                    class="text-primary">Professional</span></p>
+                            <div class="card-fasilitas d-flex justify-content-between align-items-center px-4">
+                                <span>
+                                    1500+
+                                    <p>Documents</p>
+                                </span>
+                                <span>
+                                    700+
+                                    <p>Cases</p>
+                                </span>
+                                <span>
+                                    300+
+                                    <p>Journals</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center mt-5">
+                <div class="col-12">
+                    <button class="button-primary">View All Collections</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="kontak">
+        <div class="container-fluid overlay h-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-5 lh-lg">
+                        <h3>Need Help? Contact Our Library Support Team</h3>
+                        <div class="kontak">
+                            <h6 class="mt-4">Contact Info</h6>
+                            <div class="email"> <a href="#">support@digitallibrary.com</a>
+                            </div>
+                            <div class="whatsapp">
+                                <a href="#">1-800-LIBRARY</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-contact w-100">
+                            <form>
+                                <div class="form-floating mb-4">
+                                    <input type="email" class="form-control" id="floatingInput"
+                                        placeholder="name@example.com">
+                                    <label for="floatingInput">Your Name</label>
+                                </div>
+                                <div class="form-floating mb-4">
+                                    <input type="email" class="form-control" id="floatingInput"
+                                        placeholder="name@example.com">
+                                    <label for="floatingInput">Your Question</label>
+                                </div>
+                                <button type="submit" class="button-kontak">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>Copyright © 2024 Digital Library. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
